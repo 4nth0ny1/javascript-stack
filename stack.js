@@ -26,4 +26,9 @@ class Stack {
     peek(){
         return this.storage[this.count - 1];
     }
+
+    // shows the length of the stack
+    size(){
+        return this.count;
+    }
 }
