@@ -21,4 +21,9 @@ class Stack {
         delete this.storage[this.count];
         return result;
     }
+
+    // shows the end/top element from the stack
+    peek(){
+        return this.storage[this.count - 1];
+    }
 }
