@@ -9,4 +9,16 @@ class Stack {
         this.storage[this.count] = value;
         this.count++;
     }
+
+    // removes end/top element from the stack
+    pop() {
+        if (this.count === 0){
+            return undefined;
+        }
+
+        this.count--;
+        const result = this.storage[this.count];
+        delete this.storage[this.count];
+        return result;
+    }
 }
