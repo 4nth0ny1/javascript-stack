@@ -32,3 +32,16 @@ class Stack {
         return this.count;
     }
 }
+
+const stack = new Stack({}, 0);         // creates an empty stack with a count of zero
+stack.push('lord of the rings');        // adds a book to the empty stack
+stack.push('the hobbit'); 
+stack.push('harry potter'); 
+stack.push('dune'); 
+
+console.log(stack.storage);                         // shows the stack in the console
+console.log(`COUNT: ${stack.count}`);               // reveals the count of the stack in the console
+console.log(`LAST REMOVED: ${stack.pop()}`);        // shows the last removed element from the stack
+console.log(stack.storage);                         // shows the stack in the console
+console.log(`TOP ELEMENT: ${stack.peek()}`);        // show the top element 
+console.log(`STACK SIZE: ${stack.size()}`);         // show the size of the stack
